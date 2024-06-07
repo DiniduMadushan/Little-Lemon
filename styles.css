@@ -61,6 +61,12 @@ main{
     margin-bottom: 20px;
 }
 
+.banner article{
+    background-color: #93e0b2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .banner h1{
     font-size: 3.5em;
     margin-bottom: 10px;
@@ -73,18 +79,25 @@ main{
     padding-bottom: 20px;
 }
 
+
 .columns{
     display: flex;
     justify-content: space-around;
 }
 
 .columns article{
-    background-color: #FFA27F;
+    background-color: #ebe6e4;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
     flex: 1;
     margin: 0 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.columns article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .columns article img{
